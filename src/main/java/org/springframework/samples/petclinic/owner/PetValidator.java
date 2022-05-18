@@ -48,8 +48,8 @@ public class PetValidator implements Validator {
 		}
 
 		// birth date validation
-		if (pet.getBirthDate() == null) {
-			errors.rejectValue("birthDate", REQUIRED, REQUIRED);
+		if (pet.getBirthday() == null) {
+			errors.rejectValue("birthday", REQUIRED, REQUIRED);
 		}
 	}
 

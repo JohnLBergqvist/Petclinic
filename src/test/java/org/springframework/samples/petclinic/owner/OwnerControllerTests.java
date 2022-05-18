@@ -76,7 +76,7 @@ class OwnerControllerTests {
 		dog.setName("dog");
 		max.setType(dog);
 		max.setName("Max");
-		max.setBirthDate(LocalDate.now());
+		max.setBirthday(LocalDate.now());
 		george.addPet(max);
 		max.setId(1);
 		return george;

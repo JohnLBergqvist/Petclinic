@@ -46,7 +46,7 @@ public class Pet extends NamedEntity {
 
 	@Column(name = "birth_date")
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private LocalDate birthDate;
+	private LocalDate birthday;
 
 	@ManyToOne
 	@JoinColumn(name = "type_id")
@@ -57,12 +57,12 @@ public class Pet extends NamedEntity {
 	@OrderBy("visit_date ASC")
 	private Set<Visit> visits = new LinkedHashSet<>();
 
-	public void setBirthDate(LocalDate birthDate) {
-		this.birthDate = birthDate;
+	public void setBirthday(LocalDate birthday) {
+		this.birthday = birthday;
 	}
 
-	public LocalDate getBirthDate() {
-		return this.birthDate;
+	public LocalDate getBirthday() {
+		return this.birthday;
 	}
 
 	public PetType getType() {

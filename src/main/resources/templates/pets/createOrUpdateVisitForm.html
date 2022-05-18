@@ -13,7 +13,7 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th>Birth Date</th>
+        <th>Birthday</th>
         <th>Type</th>
         <th>Owner</th>
       </tr>
@@ -21,7 +21,7 @@
     <tr>
       <td th:text="${pet.name}"></td>
       <td
-        th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}"></td>
+        th:text="${#temporals.format(pet.birthday, 'yyyy-MM-dd')}"></td>
       <td th:text="${pet.type}"></td>
       <td
         th:text="${owner?.firstName + ' ' + owner?.lastName}"></td>
